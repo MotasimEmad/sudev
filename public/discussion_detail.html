@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudev | Discussion-Details</title>
+    <link rel="stylesheet" href="build/tailwind.css">
+</head>
+
+<body>
+    <header class="bg-cover bg-fixed bg-top text-white bg-gray-900">
+        <div class="container px-6 py-6">
+            <nav class="flex flex-col md:flex-row md:items-center md:justify-between">
+                <div class="flex justify-between items-center">
+                    <div class="">
+                        <a class="text-2xl font-bold text-gray-300 hover:text-blue-500 md:text-3xl" href="#">Su<span
+                                class="text-blue-500">dev.</span></a>
+                    </div>
+                    <div class="md:hidden">
+                        <button @click="isOpen = !isOpen" type="button" class="block focus:outline-none">
+                            <svg class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                                <path
+                                    d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="flex flex-col md:-mx-4 md:flex-row text-gray-300 font-semibold"
+                    :class="isOpen ? 'block' : ['hidden' , 'md:block']">
+                    <a class="mt-1 text-sm hover:text-blue-500 md:mt-0 md:mx-4" href="index.html">Home</a>
+                    <a class="mt-1 text-sm hover:text-blue-500 md:mt-0 md:mx-4" href="meetup.html">Meetup</a>
+                    <a class="mt-1 text-sm hover:text-blue-500 md:mt-0 md:mx-4" href="podast.html">Podcast</a>
+                    <a class="mt-1 text-sm hover:text-blue-500 md:mt-0 md:mx-4" href="discussion.html">Friday
+                        Discussion</a>
+                </div>
+            </nav>
+            <div
+                class="px-8 py-8 max-w-md mx-auto sm:max-w-xl sm:object-cover sm:object-center lg:w-1/2 lg:py-24 lg:px-12 text-left">
+                <div class="xl:max-w-lg xl:ml-auto">
+                    <h1 class="mt-6 text-3xl lg:text-5xl font-bold text-gray-200 leading-tight sm:mt-8">
+                        Lorem ipsum dolor sit
+                    </h1>
+                    <p class="text-xl mt-2 md:mt-6 md:text-xl text-gray-200 font-semibold">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum molestias quis, expedita
+                        explicabo
+                        quisquam.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    
+</body>
+
+</html>
