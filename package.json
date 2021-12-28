@@ -4,14 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "postcss css/tailwind.css -o public/build/tailwind.css"
+    "build": "postcss css/tailwind.css -o public/build/tailwind.css",
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "autoprefixer": "^10.3.6",
+    "express": "^4.17.2",
     "postcss-cli": "^9.0.1",
+    "serve-static": "^1.14.2",
     "tailwindcss": "^2.2.16"
   }
 }
